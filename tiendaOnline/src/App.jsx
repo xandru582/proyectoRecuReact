@@ -1,14 +1,16 @@
 import React from 'react'
 import { BrowserRouter, Link , Routes, Route } from "react-router-dom";
+import Principal from './pages/Principal';
+import Cabecera from './components/Cabecera';
 const App = () => {
   return (
     <>
-    <div>Pagina principal</div>
-
+    
+    <Cabecera></Cabecera>
     <BrowserRouter>
 
       <Routes>
-          <Route path='/' Component={}>
+          <Route path='/' Component={Principal}>
 
           </Route>
       </Routes>
